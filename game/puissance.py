@@ -129,11 +129,64 @@ shape_colors = [(0, 255, 0), (255, 0, 0), (0, 255, 255), (255, 255, 0), (255, 16
 # index 0 - 6 represent shape
 
 class Piece(object):
+      rows = 20 # y
+      columns = 10 # x
+
+      def __init__(self, x, y, shape):
+            self.x = x
+            self.y = y
+            self.shape = shape
+            self.color = shape_colors[shape.index(shape)]
+            self.rotation= 0  # number 0-3
+
+
+def create_grip(locked_position = {}):
+      # _ or x its w/e
+      grid = [[(0,0,0) for _ in range (10)] for _ in range (20)]
+      #first list grip = 20
+      for i in range (len(grid)):
+            #2nd list grip = 10
+            for j in range(len(grid[i])):
+                  #j=x, i=y
+                  if (j,i) in locked_position:
+                        c = locked_position[(j,i)]
+                        grid[i][j] = c
+      return grid
+
+
+def convert_shape_format(shape):
+    pass
+
+def valid_space(shape, grid):
+    pass
+
+def check_lost(positions):
+    pass
+
+def get_shape():
+    return random.choice(shapes)
+
+def draw_text_middle(text, size, color, surface):
+    pass
+
+def draw_grid(surface):
+      surface.filll((0,0,0))
+      pygame.font.name.init
+
+def clear_rows(grid, locked):
       pass
 
-def create_grip(locked_position={}):
+def draw_next_shape(shape, surface):
       pass
 
-def convert_shape(shape):
-      pass
+def draw_window(surface):
+    pass
+
+def main():
+    pass
+
+def main_menu():
+    pass
+
+main_menu()  # start game
 
