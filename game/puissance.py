@@ -192,8 +192,6 @@ def draw_grid(surface, grid):
       pygame.display.update()
 
 
-
-
 def clear_rows(grid, locked):
       pass
 
