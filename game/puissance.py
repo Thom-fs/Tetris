@@ -193,7 +193,6 @@ def draw_grid(surface, grid):
 
 
 
-
 def clear_rows(grid, locked):
       pass
 
