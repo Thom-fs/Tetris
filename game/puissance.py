@@ -189,9 +189,7 @@ def draw_grid(surface, grid):
 
       pygame.draw.rect(surface, (255,0,0), (top_left_x, top_left_y, play_width, play_height), 4)
 
-
       pygame.display.update()
-
 
 
 
