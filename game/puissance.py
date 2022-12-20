@@ -181,6 +181,7 @@ def draw_grid(surface, grid):
       surface.blit(label, (top_left_x + play_width/2 - (label.get_width()/2), 30))
 
 
+
       # loop trough every color within the grid i,j
       for i in range(len(grid)):
             for j in range(len(grid[id])):
